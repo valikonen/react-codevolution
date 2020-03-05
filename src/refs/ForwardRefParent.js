@@ -23,9 +23,5 @@ class ForwardRefParent extends Component {
 }
 
 
-ForwardRefParent.propTypes = {
-    
-};
-
 
 export default ForwardRefParent;
