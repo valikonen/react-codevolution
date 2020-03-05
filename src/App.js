@@ -10,7 +10,9 @@ import './App.css';
 
 // import Focus from './refs/Focus';
 // import InputParent from './refs/InputParent';
-import ForwardRefParent from './refs/ForwardRefParent';
+// import ForwardRefParent from './refs/ForwardRefParent';
+
+import Portal from './Portal/Portal'
 
 
 function App() {
@@ -25,7 +27,9 @@ function App() {
 
       {/* <InputParent />  */}
 
-      <ForwardRefParent />
+      {/* <ForwardRefParent /> */}
+
+      <Portal />
 
     </div>
   );
