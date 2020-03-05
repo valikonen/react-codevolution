@@ -14,9 +14,14 @@ import './App.css';
 
 // import Parent from './HigherOrderComponents/Parent'
 
-import Counter from './RenderProps/Counter';
-import CountChild from './RenderProps/CountChild';
-import Header from './RenderProps/Header';
+// render props
+// import Counter from './RenderProps/Counter';
+// import CountChild from './RenderProps/CountChild';
+// import Header from './RenderProps/Header';
+
+// context
+import {UserProvider} from './Context/userContext';
+import ChildLevelOne from './Context/ChildLevelOne';
 
 
 function App() {
@@ -35,9 +40,13 @@ function App() {
 
       {/* <Parent name="Zorro" /> */}
 
-      <Counter renderCount={(count, incrementCount) => <CountChild count={count} incrementCount={incrementCount} /> } />
-      <Counter renderCount={(count, incrementCount) => <Header count={count} incrementCount={incrementCount} /> } />
+      {/* render props */}
+      {/* <Counter renderCount={(count, incrementCount) => <CountChild count={count} incrementCount={incrementCount} /> } /> */}
+      {/* <Counter renderCount={(count, incrementCount) => <Header count={count} incrementCount={incrementCount} /> } /> */}
 
+      <UserProvider value="Zorro">
+        <ChildLevelOne />
+      </UserProvider>
     </div>
   );
 }
